@@ -40,10 +40,6 @@ nav a.active {
   color: #10253d;
 }
 
-
-/* header */
-
-/* Header.css */
 /* Header.css */
 .header {
   background-color: #11384e;
@@ -52,9 +48,24 @@ nav a.active {
   text-align: center;
 }
 
-.header-content {
-  max-width: 800px;
-  margin: 0 auto;
+.header-icons {
+  position: absolute;
+  top: 50%;
+  left: 30px;
+  transform: translateY(-50%);
+}
+
+.header-icons a {
+  display: block;
+  color: #fff;
+  font-size: 24px;
+  margin-bottom: 20px;
+  text-decoration: none;
+  transition: color 0.3s ease-in-out;
+}
+
+.header-icons a:hover {
+  color: #4fff45;
 }
 
 .profile-pic {
@@ -65,15 +76,14 @@ nav a.active {
   margin: 0 auto 20px;
 }
 
-.header h1 {
-  font-size: 3rem;
-  margin-bottom: 10px;
+.animated-icon {
+  transition: transform 0.3s ease-in-out;
 }
 
-.header p {
-  font-size: 1.5rem;
-  opacity: 0.8;
+.animated-icon:hover {
+  transform: scale(2); /* Change the scaling value as desired */
 }
+
 
 
 /* about */

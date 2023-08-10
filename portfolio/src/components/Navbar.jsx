@@ -18,6 +18,17 @@ const Navbar = () => {
         </li>
         <li>
           <Link
+            to="skills"
+            spy={true}
+            smooth={true}
+            offset={-70} // Adjust offset to your header height
+            duration={500}
+          >
+            Skills
+          </Link>
+        </li>
+        <li>
+          <Link
             to="projects"
             spy={true}
             smooth={true}
