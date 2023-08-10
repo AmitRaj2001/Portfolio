@@ -1,12 +1,19 @@
 import React from 'react';
 import { FaCode, FaCodepen, FaLinkedin, FaEnvelope, FaGithub, FaInstagram } from 'react-icons/fa';
-
+import video from '../video/DSC.mp4';
 
 import img1 from '../images/myProfile.jpg'
 
 const Header = () => {
   return (
     <header className="header">
+
+
+      <video autoPlay loop muted playsInline className="video-background">
+        <source src={video} type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
+      <div className="content">
       <div className="header-icons">
         <a href="https://www.codechef.com/users/amit_official" target="_blank" rel="noopener noreferrer">
           <FaCode className="animated-icon"/>
@@ -29,8 +36,7 @@ const Header = () => {
       </div>
       <div className="header-content">
         <img src= {img1} alt="Your Name" className="profile-pic"  />
-        <h1 className="animated-icon">Amit Raj</h1>
-        <p>Software Engneer</p>
+      </div>
       </div>
     </header>
   );

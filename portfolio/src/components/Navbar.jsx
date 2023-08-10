@@ -5,6 +5,7 @@ const Navbar = () => {
   return (
     <nav>
       <ul>
+      <div className="name">Amit Raj</div> {/* Your name */}
         <li>
           <Link
             to="about"
@@ -50,6 +51,7 @@ const Navbar = () => {
           </Link>
         </li>
       </ul>
+      
     </nav>
   );
 };
